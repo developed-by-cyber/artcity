@@ -1,0 +1,332 @@
+.NftProfile {
+  width: 100%;
+  height: fit-content;
+  padding: 159px 32px !important;
+}
+.NftProfile .first-p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 24px !important;
+}
+.NftProfile .profile-holder {
+  width: 100%;
+  height: fit-content;
+  padding: 128px 69px !important;
+  background-color: #ffffff0a;
+  backdrop-filter: blur(15px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NftProfile .profile-holder hr {
+  display: block;
+  width: 1px;
+  height: 72px;
+  position: relative;
+  background-color: white;
+  margin: 0px 50px !important;
+}
+.NftProfile .profile-holder .p1 {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 32px !important;
+}
+.NftProfile .profile-holder .img-hold {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #8a64ff;
+  overflow: hidden;
+}
+.NftProfile .profile-holder .img-hold img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.NftProfile .profile-holder .profile-hold {
+  margin-bottom: 25px !important;
+}
+.NftProfile .profile-holder .profile-hold .profile-name p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 13px !important;
+}
+
+.NftProfile .profile-holder .profile-hold .profile-name .username {
+  padding: 7px 12px !important;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.NftProfile .profile-holder .text-hold {
+  display: flex;
+  justify-content: space-between !important;
+  gap: 1em;
+}
+
+.NftProfile .profile-holder .text p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.NftProfile .profile-holder .text span {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.my-nfts {
+  margin-top: 48px !important;
+}
+
+.my-nfts .nft-hold {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 40px !important;
+}
+
+.nftcard {
+  width: 260px;
+  height: fit-content;
+  border-radius: 8px;
+  background: #0c1b38;
+  position: relative;
+  background-clip: content-box, border-box;
+}
+.nftcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: var(--linear-color) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.nftcard .card-hold {
+  padding: 15px !important;
+  padding-bottom: 10px !important;
+}
+.nftcard .tops {
+  position: relative;
+  width: 100%;
+  min-height: 39vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.nftcard .tops .bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.nftcard .tops .glass {
+  width: 85px;
+  height: 34px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.438);
+  backdrop-filter: blur(20.5px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nftcard .tops .glass p {
+  color: var(--light-greyscale-text-on-color-plashes, #080808);
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nftcard .bottom {
+  height: fit-content;
+  width: 100%;
+  margin-top: 10px !important;
+}
+.nftcard .bottom .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nftcard .bottom p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+}
+.nftcard .bottom .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px !important;
+}
+.nftcard .bottom .profile .left {
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center !important;
+  color: #fff;
+  font-family: Gilroy;
+}
+.nftcard .bottom .profile .left .pics {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+.nftcard .bottom .profile .left p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 14px;
+  margin-bottom: 2px;
+  line-height: 15px;
+}
+.nftcard .bottom .profile .left span {
+  color: #fff;
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 12px !important;
+  opacity: 0.75;
+}
+.nftcard .bottom .right {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.2em !important; */
+  /* position: relative; */
+  /* background-color: red !important; */
+}
+.nftcard .bottom .name .right p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.nftcard .bottom .name .right span {
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 10px;
+  opacity: 0.75;
+  align-self: end;
+}
+.NftProfile .nftcard .bottom{
+  padding-bottom: 0px !important;
+}
+@media screen and (max-width: 1072px) {
+  .my-nfts .nft-hold{
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .NftProfile .profile-holder {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .NftProfile .profile-holder {
+    padding: 128px 20px !important;
+  }
+  .NftProfile .profile-holder .text-hold {
+    gap: 0;
+    align-items: center;
+    margin-top: 20px !important;
+  }
+  .NftProfile .profile-holder hr {
+    margin: 0px 20px !important;
+  }
+  .NftProfile .profile-holder .first-hr {
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .NftProfile .profile-holder {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .NftProfile .profile-holder {
+    padding: 80px 20px !important;
+    overflow-x: auto;
+  }
+  .NftProfile .profile-holder .text p {
+    font-size: 15px;
+  }
+  .NftProfile .profile-holder .text span {
+    font-size: 12px;
+  }
+  .NftProfile {
+    overflow-x: hidden;
+    padding: 159px 15px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .NftProfile {
+    padding: 159px 15px !important;
+    padding-bottom: 90px !important;
+  }
+  .NftProfile .profile-holder .img-hold {
+    width: 70px;
+    height: 70px;
+  }
+  .NftProfile .profile-holder {
+    align-items: flex-start;
+    padding: 50px 20px !important;
+  }
+
+  .NftProfile .profile-holder .first-hr {
+    display: none;
+  }
+  .NftProfile .profile-holder .text-hold {
+    justify-content: center;
+    gap: 0 !important;
+    height: fit-content !important;
+  }
+  .my-nfts .nftcard {
+    width: 90%;
+  }
+  .NftProfile .profile-holder{
+    backdrop-filter: none;
+  }
+  .NftProfile .profile-holder .text span{
+    margin-bottom: 0px !important;
+    line-height: 0px !important;
+  }
+  
+}
+@media screen and (max-width: 399px){
+  .NftProfile .profile-holder .text span .adj{
+    position: relative;
+    top: -5.8px;
+  }
+}
+

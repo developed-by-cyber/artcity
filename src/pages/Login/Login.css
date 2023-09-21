@@ -1,0 +1,295 @@
+.wrap {
+  width: 100%;
+  height: fit-content !important;
+  padding: 90px 0px !important;
+}
+.wrap .topper {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin: 0px 100px !important;
+}
+.wrap .topper .back {
+  cursor: pointer !important;
+  position: relative;
+  z-index: 333;
+}
+.wrap .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 333;
+}
+.wrap .bottom .bottom-left {
+  margin-left: 100px !important;
+}
+.wrap .bottom .bottom-left p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.wrap .bottom .bottom-left a {
+  background: var(--linear-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration-line: underline !important;
+  text-decoration: underline !important;
+  position: relative;
+}
+.wrap .bottom .bottom-left a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 0.9px;
+  background: var(--linear-color);
+}
+.p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gilroy;
+}
+.pppp{
+  position: absolute;
+  margin-left: 27px !important;
+}
+.log .loader{
+  right: 50px;
+}
+.wrap .center form .bt:disabled{
+  opacity: 0.7;
+}
+.wrap .bottom .bottom-right {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: lowercase;
+  margin-right: 100px !important;
+}
+hr {
+  display: none;
+}
+.center form {
+  width: 440px !important;
+  height: fit-content;
+  margin: 70px auto !important;
+  position: relative;
+  z-index: 20;
+}
+.center form .head {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+.center form .head2 {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 40px !important;
+  margin-top: 8px !important;
+}
+.center form .inputs::placeholder {
+  opacity: 0.6;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.center form .dis2 {
+  position: relative;
+}
+.center form .show {
+  position: absolute;
+  right: 20px;
+  top: 49%;
+}
+.center form .remember {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px !important;
+}
+.center form .remember input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center form .remember input[type="checkbox"]:checked {
+  background: linear-gradient(82deg, #8a64ff 0%, #1e77ad 58.13%, #e016ff 100%);
+}
+.center form .remember input[type="checkbox"]:after {
+  content: "✓";
+  font-size: 18px;
+  color: #39383a;
+  font-weight: 900;
+  display: none;
+}
+.center form .remember input[type="checkbox"]:checked:after {
+  display: block;
+}
+.center form .remember .left {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  flex-wrap: wrap;
+}
+.center form .remember .left span {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.center form .remember .right a {
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  position: relative;
+}
+.center form .remember .right a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 0.9px;
+  background: var(--linear-color);
+}
+.center form .bt {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  height: 59px;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  border: none;
+}
+.center form .redirect {
+  margin-top: 24px !important;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+.center form .redirect .link {
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 5px !important;
+}
+
+@media screen and (max-width: 700px) {
+  .wrap .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .wrap .bottom .bottom-right {
+    margin-right: 0px !important;
+  }
+  .wrap .bottom .bottom-left {
+    margin-left: 0px !important;
+    margin-bottom: 55px !important;
+  }
+  hr {
+    display: block;
+  }
+  .wrap {
+    padding: 30px 0px !important;
+  }
+  .wrap .topper {
+    margin: 0px 30px !important;
+  }
+  .center form {
+    width: 400px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .center form {
+    width: 350px !important;
+  }
+  .center form .bt {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .center form {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .center form {
+    scale: 85%;
+  }
+}

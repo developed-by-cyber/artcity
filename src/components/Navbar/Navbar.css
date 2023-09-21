@@ -1,0 +1,181 @@
+.main-nav {
+  padding-top: 35px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav ul {
+  display: flex;
+  column-gap: 24px;
+}
+.main-nav ul .logo img{
+  position: relative;
+  top: -1.2px;
+}
+.main-nav ul li {
+  color: var(--text-color);
+  font-family: var(--font-gilroy);
+}
+.main-nav .btns {
+  display: flex;
+  column-gap: 16px;
+}
+.main-nav .btns .btn1 {
+  background: var(--linear-color);
+  color: var(--text-color);
+}
+.main-nav .btns .btn2 {
+  background-color: transparent;
+  color: var(--text-color);
+  position: relative;
+  background-clip: content-box, border-box;
+}
+.main-nav .btns .btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: var(--linear-color) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.main-nav .btns .btn2:hover {
+  background: var(--linear-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.mobile-nav {
+  display: none;
+}
+@media screen and (max-width: 1025px) {
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .mobile-nav .logo-hold {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
+    width: 100%;
+    height: fit-content;
+  }
+  .mobile-nav .logo-hold img {
+    width: 95px;
+    position: relative;
+    top: 5px;
+  }
+  .mobile-nav .logo-hold .toggle{
+    width: 34px;
+    height: 34px;
+  }
+  .side-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #451676 !important;
+    position: fixed !important;
+    padding: 0px 35px !important;
+    padding-top: 38px !important;
+    top: 0;
+    right: -100%;
+    z-index: 20 !important;
+    transition: 0.5s ease-in-out;
+  }
+  .side-bar.activ {
+    right: 0;
+  }
+  .side-bar .closer {
+    width: 100% !important;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    margin-bottom: 128px !important;
+  }
+  .side-bar .closer .close {
+    position: absolute;
+    right: 30px;
+    width: 34px;
+    height: 34px;
+    top: 35px;
+  }
+  .side-bar .closer .logo img{
+    /* position: absolute; */
+    /* left: 50%; */
+    width: 95px;
+    /* transform: translateX(-50%); */
+  }
+  .side-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    margin-bottom: 20px !important;
+  }
+
+  /* .main-nav ul {
+    display: flex;
+    column-gap: 24px;
+  } */
+  .side-bar .closer .logo {
+    font-weight: var(--w-600);
+    color: var(--text-color);
+    font-family: var(--font-gilroy);
+  }
+  .side-bar ul li {
+    color: var(--text-color);
+    font-family: var(--font-gilroy);
+    text-align: center;
+    font-size: 17px;
+  }
+  .side-bar .btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .side-bar .btns button{
+    width: 250px;
+    height: 50px;
+    border-radius: 24px;
+  }
+  .side-bar .btns button:first-child {
+    background: var(--linear-color);
+    color: var(--text-color);
+  }
+  .side-bar .btns button:last-child {
+    background-color: transparent;
+    color: var(--text-color);
+    position: relative;
+    background-clip: content-box, border-box;
+  }
+  .side-bar .btns button:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    background: var(--linear-color) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  .side-bar .btns button:last-child:hover {
+    background: var(--linear-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+  }
+}
+
+

@@ -1,0 +1,120 @@
+.RecentTransaction {
+  width: 100%;
+  height: 48vh;
+  overflow: hidden;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  margin-top: 48px !important;
+}
+.RecentTransaction .p1 {
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px !important;
+}
+.table > :not(caption) > * > * {
+  background-color: transparent !important;
+  overflow-x: auto !important;
+  border-bottom-width: 0 !important;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.377) !important;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  padding: 20px 36px !important;
+}
+.RecentTransaction table {
+  overflow-x: auto !important;
+  /* height: 10vh !important;
+  background-color: red !important;
+  overflow: hidden !important; */
+}
+.RecentTransaction th {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+
+.RecentTransaction td {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.RecentTransaction table .dd img {
+  margin-right: 8px !important;
+  width: 15px;
+}
+.RecentTransaction .tables {
+  width: 100%;
+  height: fit-content;
+}
+.RecentTransaction .heading {
+  background: #2D74B9;
+  border: 0 !important;
+  border-radius: 4px !important;
+}
+.RecentTransaction .tables .heading {
+  /* background: var(--linear-color); */
+  border-radius: 4px !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 18px 36px !important;
+  gap: 100px;
+}
+.RecentTransaction .tables .heading p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+.RecentTransaction .tables .data .lines {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 36px !important;
+  gap: 100px;
+  border-bottom: 1px solid #15326d;
+  border-radius: 4px;
+}
+.RecentTransaction .tables .data .lines p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.failed{
+  color: red !important;
+}
+@media screen and (max-width: 1025px) {
+  .recent-tab {
+    overflow-x: auto !important;
+  }
+  .RecentTransaction .tables .heading {
+    display: flex;
+    justify-content: space-around;
+  }
+  .RecentTransaction .tables .data .lines {
+    display: flex;
+    justify-content: space-around;
+  }
+  .RecentTransaction table {
+    overflow-x: scroll !important;
+  }
+}

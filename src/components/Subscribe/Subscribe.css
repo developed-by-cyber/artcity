@@ -1,0 +1,124 @@
+.subscribe {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  padding: 70px 100px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  opacity: 0.98;
+}
+.subscribe .left {
+  width: 40%;
+  height: fit-content;
+}
+.subscribe .left .heading {
+  color: #3d3d3d;
+  font-family: Gilroy;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px !important;
+}
+.subscribe .left span {
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subscribe .left p {
+  color: var(--pit-black-gray-2, #39404f);
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 28px;
+}
+.subscribe .right {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.subscribe .right input {
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var(--light-greyscale-stroke, #d7d7d7);
+  background: var(--light-greyscale-bg-darken, #f8f8f8);
+  outline: none;
+  color: #182233;
+  font-family: Gilroy;
+  font-size: 16px;
+  margin-bottom: 15px !important;
+}
+.subscribe .right button {
+  width: 100%;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  box-shadow: 0px 5px 10px 0px rgba(64, 123, 255, 0.12);
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 1400px) {
+  .subscribe {
+    padding: 70px 150px !important;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .subscribe {
+    padding: 70px 50px !important;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .subscribe {
+    padding: 70px 50px !important;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .subscribe .left {
+    width: 100%;
+    text-align: center;
+  }
+  .subscribe .right {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subscribe .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .subscribe {
+    padding: 70px 25px !important;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .subscribe .left {
+    width: 100%;
+  }
+  .subscribe .left .heading {
+    line-height: 45px;
+  }
+  .subscribe .right {
+    width: 100%;
+  }
+  .subscribe .right input {
+    margin-bottom: 25px !important;
+  }
+}

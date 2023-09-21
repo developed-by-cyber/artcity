@@ -1,0 +1,538 @@
+.bac-ar{
+  position: absolute;
+  top: 50px;
+  /* width: 30px;
+  height: 30px; */
+  backdrop-filter: blur(0) !important;
+  filter: blur(0) !important;
+  z-index: 99999;
+}
+.marketplace {
+  width: 100%;
+  padding: 0px 50px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-bottom: 50px !important;
+  padding-top: 136px !important;
+  position: relative;
+  overflow: hidden;
+}
+.marketplace::before {
+  content: "";
+  width: 545px;
+  height: 545px;
+  position: absolute;
+  left: -30px;
+  top: -200px;
+  background: #1e77ad;
+  border-radius: 545px;
+  opacity: 0.3;
+  filter: blur(120px);
+}
+.marketplace::after {
+  content: "";
+  width: 545px;
+  height: 545px;
+  position: absolute;
+  right: -30px;
+  bottom: -200px;
+  background: #e016ff;
+  border-radius: 545px;
+  opacity: 0.3;
+  filter: blur(120px);
+}
+
+.marketplace .top {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  z-index: 5;
+}
+.marketplace .p1 {
+  color: #fff;
+  text-align: justify;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.marketplace .top2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px !important;
+}
+.marketplace .top2 .item p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px !important;
+}
+.marketplace .top2 .item i {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.marketplace .top2 .item span {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 10px !important;
+}
+.marketplace .top2 .item .span {
+  border-left: 1px solid white;
+  padding-left: 10px !important;
+}
+.marketplace .item2 {
+  padding: 0px 60px !important;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marketplace .item2 p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.marketplace .item2 span {
+  color: #e9e9e9;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.marketplace .item3 {
+  padding-right: 40px !important;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marketplace .item3 p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.marketplace .item3 span {
+  color: #e9e9e9;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.marketplace .item4 {
+  padding-right: 40px !important;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marketplace .item4 p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.marketplace .item4 span {
+  color: #e9e9e9;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.mobil {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+.marketplace .topp {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  column-gap: 40px;
+  row-gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px !important;
+  z-index: 5;
+  position: relative;
+}
+.marketplace .topp button.active {
+  background: var(--linear-color);
+}
+.marketplace .topp .btn1 {
+  background: linear-gradient(
+    135deg,
+    #8a64ff 0%,
+    #1e77ad 50.52%,
+    #e016ff 91.67%
+  );
+}
+.marketplace .topp button {
+  width: 104px;
+  height: 36px;
+  border-radius: 24px;
+  border: none;
+  font-family: Gilroy;
+  font-size: 12px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  background-clip: content-box, border-box;
+}
+.marketplace .topp button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+      135deg,
+      #8a64ff 0%,
+      #1e77ad 50.52%,
+      #e016ff 91.67%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.markets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 45px !important;
+  row-gap: 25px;
+  column-gap: 0.5em;
+  position: relative;
+  z-index: 5;
+}
+
+
+@media screen and (max-width: 1115px) {
+  .markets {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .marketplace .top {
+    flex-wrap: wrap;
+  }
+  .marketplace .top2 {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .markets {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .marketplace {
+    padding: 140px 25px !important;
+    padding-bottom: 50px !important;
+  }
+  .marketplace .desktop {
+    display: none !important;
+  }
+  .mobil {
+    display: block;
+  }
+  .see-more button{
+    display: none;
+  }
+  .mobil .top .img-holder {
+    width: 100%;
+    height: 19vh;
+    background-image: url(../../assets/DashboardImg/MarketPlace.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .mobil hr {
+    width: 1px;
+    height: 8vh;
+    background-color: white;
+    margin-top: 15px !important;
+    position: relative;
+    top: 5px;
+  }
+
+  .mobil .item p {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+  }
+  .mobil .item span {
+    color: #e9e9e9;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .markets {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 25px;
+  }
+  .marketplace .topp {
+    column-gap: 10px;
+  }
+  .marketplace .topp button {
+    margin-bottom: 10px !important;
+    width: 100px;
+  }
+  .marketplace .top3 {
+    margin-top: 20px !important;
+  }
+}
+@media screen and (max-width: 600px){
+  .markets {
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 25px;
+  }
+}
+@media (max-width: 490px) {
+  .marketplace .chatbot-toggler {
+    right: 20px;
+    bottom: 35px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .markets{
+    display: flex !important;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 18px;
+  }
+  .markets .nft__card {
+    width: 48%;
+  }
+  .markets .nft__card .card-hold{
+    margin-bottom: 0px !important;
+  }
+  .markets .nft__card .tops{
+    min-height: 21vh;
+  }
+  .markets .nft__card .tops .glass{
+    width: 42px;
+    height: 18px;
+  }
+  .markets 
+  .nft__card .tops .glass p{
+    font-size: 8px;
+  }
+  .markets .nft__card .bottom{
+    margin-top: 6px !important;
+  }
+  .markets .nft__card .bottom p{
+    font-size: 9px;
+    margin-bottom: 0px !important;
+  }
+  .markets .nft__card .bottom .profile{
+    margin-top: 3px !important;
+  }
+  .markets .nft__card .bottom .profile .left .imgs-hold{
+    width: 20px;
+    height: 20px;
+    padding: 0px !important;
+  }
+  .markets .nft__card .bottom .profile .left .imgs-hold img{
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    height: 131%;
+    object-fit: cover !important;
+
+  }
+  .markets .nft__card .bottom .profile .left{
+    align-items: center;
+  }
+  .markets .nft__card .bottom .profile .left .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+  }
+  .markets .nft__card .bottom .profile .left p{
+    font-size: 10px;
+    padding: 0 !important;
+  }
+  .markets .nft__card .bottom .profile .left span{
+    font-size: 8px !important;
+    padding: 0 !important;
+    line-height: 8px;
+  }
+  .markets .nft__card .bottom .profile .right{
+    gap: 0 !important;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between;
+    margin-top: 7px !important;
+  }
+  .markets .nft__card .bottom .profile .right span{
+    font-size: 9px !important;
+    align-self: normal !important;
+    margin-top: 2px !important;
+  }
+  .markets .nft__card .card-hold{
+    padding: 10px !important;
+    padding-bottom: 13px !important;
+  }
+  .markets .nft__card .bottom .profile .right p{
+    font-size: 10px;
+  }
+  .see-more .chev{
+    transition: 0.4s ease-in-out;
+  }
+  .see-more button{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 3px !important;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .see-more button span{
+    background: var(--linear-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration-line: underline !important;
+  text-decoration: underline !important;
+  position: relative;
+  }
+  .marketplace .p1{
+    line-height: 28px !important;
+  }
+}
+@media screen and (max-width: 431px){
+  .markets{
+    display: flex !important;
+    justify-content: center !important;
+    column-gap: 15px !important;
+  }
+  .markets .nft__card {
+    width: 166px !important;
+  }
+  .markets .nft__card .bottom .profile{
+    flex-direction: column;
+    row-gap: 0px;
+    align-items: flex-start;
+  }
+  .markets .nft__card .bottom .profile .right span{
+    font-size: 12px;
+  }
+  .markets .nft__card .tops{
+    min-height: 18vh !important;
+  }
+  .markets .nft__card .card-hold{
+    padding-bottom: 13px !important;
+  }
+}
+@media screen and (max-width: 401px){
+  .markets{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px !important;
+    place-items: center !important;
+    width: fit-content !important;
+  }
+}
+@media screen and (max-width: 390px){
+  .marketplace{
+    padding: 140px 15px !important;
+  }
+  .markets{
+    margin-right: 25px !important;
+  }
+}
+@media screen and (max-width: 374px){
+  .mobil .item p{
+    font-size: 13px;
+    line-height: 7px !important;
+  }
+  .mobil .item span{
+    font-size: 11px;
+  }
+  .mobil hr{
+    height: 6vh;
+    margin-top: 0px !important;
+  }
+  .marketplace .top2 .item p{
+    margin-bottom: 15px !important;
+  }
+  .marketplace .top2 .item span{
+    font-size: 12px;
+  }
+  .markets .nft__card {
+    width: 150px !important;
+  }
+  .markets{
+    margin-right: 0px !important;
+    margin-left: 10px !important;
+  }
+}
+@media screen and (max-width: 350px){
+  .markets{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .markets .nft__card {
+    width: 75% !important;
+  }
+  
+}
+@media screen and (max-width: 250px){
+  .markets .nft__card {
+    width: 90% !important;
+  }
+}
+
+

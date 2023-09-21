@@ -1,0 +1,240 @@
+.details-hold {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 70px !important;
+  z-index: 2 !important;
+}
+.details-hold::before {
+  content: "";
+  width: 445px;
+  height: 445px;
+  position: absolute;
+  left: -30px;
+  top: -200px;
+  background: #1e77ad;
+  border-radius: 545px;
+  opacity: 0.3;
+  filter: blur(120px);
+}
+.details-hold::after {
+  content: "";
+  width: 445px;
+  height: 445px;
+  position: absolute;
+  right: -30px;
+  bottom: -200px;
+  background: #e016ff;
+  border-radius: 545px;
+  opacity: 0.3;
+  filter: blur(120px);
+}
+.details-hold .wrapper{
+  height: fit-content !important;
+}
+.bac{
+  position: absolute;
+  top: 60px;
+  z-index: 18;
+}
+
+.nft-details .chatbot{
+  z-index: 60 !important;
+}
+.nft-details {
+  position: relative;
+  /* z-index: ; */
+  width: 100%;
+  margin-top: 115px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 59px;
+  margin-bottom: 30px !important;
+}
+.nft-details .loader{
+  right: 33px;
+}
+.nft-details .left {
+  width: 40%;
+  height: 520px;
+  overflow: hidden;
+}
+.nft-details .left .nft-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: top;
+}
+.nft-details .right {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 18px;
+}
+.nft-details .right .nft-name {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.nft-details .right .offer {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 24px;
+}
+.nft-details .right .price1 {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.nft-details .right .price {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 2px;
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  letter-spacing: 0.5px;
+}
+.nft-details .right .details {
+  color: #fff;
+  text-align: justify;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  width: 341px;
+}
+.nft-details .right .creator {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+.nft-details .right button:disabled{
+  opacity: 0.7;
+}
+.nft-details .right button {
+  width: 368px;
+  height: 48px;
+  border-radius: 24px;
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  color: var(--light-greyscale-white, #fff);
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.details-hold .more {
+  width: 100%;
+  height: fit-content;
+  padding: 0px 105px !important;
+  padding-bottom: 157px !important;
+  margin-top: 50px !important;
+}
+.details-hold .more h3 {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px !important;
+}
+.details-hold .more-cards {
+  position: relative;
+  z-index: 5;
+}
+@media screen and (max-width: 1100px) {
+  .details-hold .more {
+    padding: 0px 80px !important;
+  }
+  .details-hold .more-cards {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nft-details {
+    flex-direction: column;
+    margin-bottom: 80px !important;
+  }
+  .nft-details .left {
+    width: 70%;
+  }
+  .nft-details .right {
+    width: 70%;
+    align-items: flex-start !important;
+  }
+}
+@media (max-width: 490px) {
+  .details-hold .chatbot-toggler {
+    right: 20px;
+    bottom: 35px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .details-hold {
+    padding: 0px 30px !important;
+    padding-bottom: 80px !important;
+  }
+  .nft-details .left {
+    width: 100%;
+    height: 320px;
+  }
+  .nft-details .right {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .nft-details .right button {
+    width: 100%;
+  }
+  .details-hold .more {
+    padding: 0px 0px !important;
+  }
+  .details-hold .more-cards .nft__card {
+    width: 90%;
+  }
+  .nft-details .right .nft-name{
+    text-transform: capitalize;
+    /* font-size: 25px !important; */
+  }
+
+  .nft-details .right .details{
+    width: 100%;
+  }
+  .bac{
+    left: 28px;
+  }
+}

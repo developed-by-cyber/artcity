@@ -1,0 +1,221 @@
+.Settings {
+  margin-top: 136px !important;
+  width: 90%;
+  padding: 0px 50px !important;
+  padding-bottom: 136px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.toper{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px !important;
+}
+.toper img{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px !important;
+  transform: rotateY(180deg);
+}
+.toper span{
+  color: white;
+  font-weight: 600;
+}
+.pp {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Settings .settings-hold {
+  width: 100%;
+  height: fit-content;
+  background-color: #ffffff0a;
+  backdrop-filter: blur(15px);
+  border-radius: 4px;
+  padding: 81px 150px !important;
+}
+.Settings .settings-hold .left .p1 {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  margin-bottom: 32px !important;
+}
+.Settings .settings-hold .left .img-hold {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  border: 2px solid #8a64ff;
+  overflow: hidden;
+}
+.Settings .settings-hold .left .img-hold img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Settings .settings-hold .left .profile-hold {
+  margin-bottom: 25px !important;
+}
+.Settings .settings-hold .left .profile-hold .profile-name p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 13px !important;
+}
+
+.Settings .settings-hold .left .profile-hold .profile-name .username {
+  padding: 7px 12px !important;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Settings .settings-hold .left button {
+  width: 184px;
+  height: 48px;
+  border-radius: 24px;
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  border-radius: 24px;
+  color: var(--light-greyscale-white, #fff);
+  text-align: center;
+
+  /* Button Text */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Settings .right .loader{
+  right: 38px;
+}
+.Settings .right button:disabled{
+  opacity: 0.7;
+}
+.Settings .settings-hold .right {
+  width: 37%;
+}
+.Settings .settings-hold .right p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px !important;
+}
+.Settings .settings-hold .right button {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  height: 50px;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  border: none;
+  margin-top: 25px !important;
+}
+.toper .logout{
+  display: none;
+}
+@media screen and (max-width: 1115px) {
+  .Settings .settings-hold {
+    padding: 50px 55px !important;
+  }
+  .Settings .settings-hold .right {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .Settings .settings-hold {
+    padding: 50px 30px !important;
+  }
+  .Settings {
+    padding: 0px 30px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Settings .settings-hold {
+    flex-direction: column !important;
+    padding-top: 40px !important;
+    row-gap: 5em;
+  }
+  .Settings .settings-hold .right p,
+  .Settings .settings-hold .left .p1 {
+    font-size: 17px;
+  }
+  label {
+    font-size: 15px;
+  }
+  .Settings .settings-hold .right {
+    width: 80%;
+  }
+  .Settings .settings-hold .left {
+    width: 80%;
+  }
+  .Settings .settings-hold .left button {
+    width: 100%;
+  }
+  .Settings .settings-hold .left .img-hold {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Settings .settings-hold {
+    padding: 40px 0px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Settings {
+    width: 100%;
+    padding-bottom: 60px !important;
+  }
+  .Settings .settings-hold {
+    background-color: transparent;
+    backdrop-filter: none;
+    width: 100%;
+    padding: 30px 0px !important;
+    padding-bottom: 80px !important;
+  }
+  .Settings .settings-hold .left {
+    width: 100%;
+  }
+  .Settings .settings-hold .right {
+    width: 100%;
+  }
+  .toper{
+    margin-bottom: 0px !important;
+  }
+  .toper span{
+    display: none;
+  }
+  .toper .logout{
+    display: block;
+  }
+}

@@ -1,0 +1,233 @@
+.mod-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #14141f1c !important;
+  z-index: 444444;
+}
+.modz{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  #14141fb0 !important;
+  z-index: 444444;
+}
+.modz .modss{
+  background-color: transparent !important;
+  z-index: 5555555;
+}
+.mod3 .loader{
+  right: 30px;
+}
+.mod3 .button .bt1:disabled{
+  opacity: 0.7;
+}
+.mod3 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0d1c39;
+  border-radius: 5px;
+  z-index: 555555;
+  width: 350px;
+  height: 92%;
+  overflow: auto !important;
+  padding: 45px 35px !important;
+  padding-bottom: 70px !important;
+  overflow-x: hidden !important;
+  animation: pop 0.3s ease-in-out;
+}
+@keyframes pop {
+  0%{
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.mod3 .mod3-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto !important;
+}
+.mod3 .push {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 60px !important;
+  margin-top: 50px !important;
+}
+.mod3 .push .bt1 {
+  background: var(--linear-color);
+  color: var(--text-color);
+  height: 40px;
+  width: 100%;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mod3 .push .bt2 {
+  background-color: transparent;
+  color: var(--text-color);
+  position: relative;
+  background-clip: content-box, border-box;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mod3 .push .bt2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: var(--linear-color) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.form-switch.form-switch-sm {
+  margin-top: 8px !important;
+  border: none;
+}
+
+.form-switch.form-switch-sm .form-check-input {
+  height: 1.1rem;
+  width: calc(1.5rem + 0.75rem) !important;
+  border-radius: 2rem;
+}
+
+.form-switch .form-check-input {
+  width: 2em;
+  margin-left: -2.5em;
+  background-color: #7768f1;
+  background-position: left center;
+  border-radius: 2em;
+  transition: background-position 0.15s ease-in-out;
+}
+.mod3 .top {
+  margin-bottom: 50px !important;
+}
+.mod3 .prices h5{
+  color: white;
+  position: relative;
+  top:-1px;
+}
+.mod3 .prices span {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.32px;
+  opacity: 0.7;
+}
+.mod3 .prices .current {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  padding-left: 20px !important;
+  margin-bottom: 19px !important;
+}
+.mod3 .prices input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  outline: 0;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 20px !important;
+  margin-bottom: 48px !important;
+}
+.mod3 .button {
+  display: flex;
+  justify-content: space-between;
+}
+.mod3 .button .bt1 {
+  background: var(--linear-color);
+  color: var(--text-color);
+  height: 40px;
+  width: 45%;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mod3 .button .bt2 {
+  background-color: transparent;
+  color: var(--text-color);
+  position: relative;
+  background-clip: content-box, border-box;
+  height: 40px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mod3 .button .bt2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: var(--linear-color) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+@media screen and (max-width: 480px) {
+  .mod3 {
+    width: 100%;
+    height: 100%;
+    padding: 45px 20px !important;
+  }
+  .mod3 .button {
+    flex-direction: column;
+    row-gap: 20px !important;
+  }
+  .mod3 .push, .mod3 .prices, .mod3 .button{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .mod3 .button .bt1 {
+    width: 100%;
+  }
+  .mod3 .button .bt2 {
+    width: 100%;
+  }
+}

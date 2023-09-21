@@ -1,0 +1,119 @@
+.terms-holder{
+    background-color: #040836;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 40px !important;
+}
+.terms-holder p{
+    color: white;
+    line-height: 28px;
+    margin-bottom: 20px !important;
+    font-weight: 280 !important;
+}
+.terms-holder .pppp{
+    margin-bottom: 0px !important;
+}
+.terms-holder strong{
+    font-weight: 400;
+}
+.terms-holder nav{
+    position: relative;
+    z-index: 99;
+}
+.terms-holder .head{
+    width: 100%;
+    height: fit-content;
+    /* min-height: 50vh; */
+    background-image: linear-gradient(35deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../../assets/subheader.jpg);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 125px 20px !important;
+}
+.terms-holder .head .text-hold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.terms-holder .head .text-hold h1{
+    color: white;
+    margin-top: 45px !important;
+}
+.terms-holder .content{
+    margin-top: 270px !important;
+    padding: 0px 70px !important;
+    text-align: left;
+}
+.terms-holder .content .p1{
+    font-size: 17px;
+    line-height: 28px;
+    color: white;
+    margin-bottom: 40px !important;
+}
+.terms-holder .content h3{
+    color: rgb(230, 230, 230);
+    margin-bottom: 20px !important;
+}
+.terms-holder .content .p2{
+    margin-bottom: 40px !important;
+}
+@media screen and (max-width: 1200px){
+    .terms-holder .content{
+        padding: 0px 0px !important;
+    }
+}
+@media screen and (max-width: 1025px){
+    .terms-holder .head{
+        padding: 125px 20px !important;
+        top: 80px;
+    }
+    .terms-holder .head .text-hold h1{
+        margin-top: 0px !important;
+    }
+    .terms-holder .content{
+        margin-top: 310px !important;
+    }
+}
+@media screen and (max-width: 550px){
+    .terms-holder .head{
+        padding: 110px 20px !important;
+    }
+    .terms-holder .content{
+        margin-top: 280px !important;
+    }
+}
+@media (max-width: 490px) {
+    .terms-holder .chatbot-toggler {
+      right: 20px;
+      bottom: 50px;
+      width: 60px;
+      height: 60px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .terms-holder p{
+        font-size: 16px;
+    }
+    .terms-holder .content .p1{
+        font-size: 16px;
+    }
+    .terms-holder .content h3{
+        font-size: 22px;
+    }
+    .terms-holder .head .text-hold h1{
+        text-align: center;
+    }
+    .terms-holder .head{
+        max-height: 20vh;
+        top: 80px;
+    }
+    .terms-holder .content{
+        margin-top: 260px !important;
+    }
+}

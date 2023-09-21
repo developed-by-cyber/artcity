@@ -1,0 +1,14 @@
+.dashboard{
+    display: flex;
+    height: fit-content;
+    background: #0D1C39 !important;
+    position: relative;
+}
+@media (max-width: 490px) {
+    .dashboard .chatbot-toggler {
+      right: 30px;
+      bottom: 90px;
+      width: 60px;
+      height: 60px;
+    }
+}

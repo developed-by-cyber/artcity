@@ -1,0 +1,187 @@
+.DashboardHome {
+  width: 100%;
+  height: fit-content;
+  margin-top: 138px !important;
+  padding: 0px 31px !important;
+  padding-bottom: 90px !important;
+  overflow: hidden;
+}
+.DashboardHome .box-wrapper {
+  gap: 41px !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.DashboardHome .box {
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  height: 160px;
+  padding: 0px 20px !important;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+.DashboardHome .boxx {
+  /* width: 340px; */
+  height: 160px;
+  padding: 0px 20px !important;
+  border-radius: 4px;
+  background-color: transparent;
+  position: relative;
+  background-clip: content-box, border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+.completed{
+  color: #28B411 !important;
+}
+.pending{
+  color: #FF7F37 !important;
+}
+.DashboardHome .boxx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: var(--linear-color) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.DashboardHome .box .box-right p,
+.DashboardHome .boxx .box-right p {
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.DashboardHome .box .box-right span,
+.DashboardHome .boxx .box-right span {
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.DashboardHome .box .box-right .mini,
+.DashboardHome .boxx .box-right .mini {
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.8;
+}
+.DashboardHome .box-btn {
+  width: fit-content;
+  display: grid;
+  width: 65%;
+  height: fit-content;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 32px !important;
+  gap: 35px !important;
+}
+.DashboardHome .box-btn .btn1 {
+  height: 48px;
+  border-radius: 24px;
+  background: var(
+    --colo,
+    linear-gradient(135deg, #8a64ff 0%, #1e77ad 50.52%, #e016ff 91.67%)
+  );
+  color: var(--light-greyscale-white, #fff);
+  text-align: center;
+  /* Button Text */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.DashboardHome .box-btn .btn2 {
+  height: 48px;
+  color: var(--light-greyscale-white, #fff);
+  text-align: center;
+
+  /* Button Text */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: transparent;
+  color: var(--text-color);
+  position: relative;
+  background-clip: content-box, border-box;
+  margin-left: 10px !important;
+}
+.DashboardHome .box-btn .btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: var(--linear-color) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+@media screen and (max-width: 1025px) {
+  .DashboardHome .box-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .DashboardHome .box-btn{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .DashboardHome .box-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .DashboardHome {
+    padding: 0px 20px !important;
+    padding-bottom: 90px !important;
+  }
+  .DashboardHome .box-wrapper {
+    gap: 16px !important;
+  }
+  .DashboardHome .box-btn{
+    grid-template-columns: 1fr;
+    gap: 15px !important;
+  }
+  .DashboardHome .box-btn .btn2{
+    margin-left: 0px !important;
+  }
+  .DashboardHome .nftcard{
+    width: 90% !important;
+  }
+  .DashboardHome .boxx, .DashboardHome .box{
+    justify-content: flex-start;
+    padding-left: 65px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .DashboardHome .boxx, .DashboardHome .box{
+    justify-content: center;
+    padding-left: 20px !important;
+  }
+}

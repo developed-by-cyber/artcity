@@ -1,0 +1,181 @@
+.header {
+  background: radial-gradient(
+    circle at 50% 35%,
+    rgba(175, 8, 235, 0.473) 0%,
+    rgba(12, 27, 56, 1) 53%
+  ) !important;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+.header .landing {
+  width: 100%;
+  height: fit-content;
+  margin-top: 65px !important;
+}
+.header .landing .landing-left {
+  width: 650px;
+  height: fit-content;
+  margin-top: 80.5px !important;
+}
+.header .landing .landing-left p:first-child {
+  color: var(--text-color);
+  font-family: var(--font-made);
+  font-size: var(--font-lg);
+  font-weight: 400;
+  line-height: 80px;
+  font-style: normal;
+  margin-bottom: 12px !important;
+}
+.header .landing .landing-left p:nth-child(2) {
+  font-size: var(--font-smid);
+  font-weight: 400;
+  font-family: var(--font-gilroy);
+  color: white !important;
+  margin-bottom: 25px !important;
+}
+.header .landing .landing-left button {
+  font-family: Gilroy;
+  font-size: 16px;
+  color: var(--text-color);
+  width: 155px;
+  height: 48px;
+  border-radius: 24px;
+  background: var(--linear-color);
+}
+.header .landing .landing-right {
+  width: 620px;
+}
+.header .landing .landing-right .header-img {
+  width: 120% !important;
+}
+.ellipse{
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+}
+.star{
+  position: absolute;
+  bottom: 230px;
+  left: 32%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1180px){
+  .header .landing .landing-left{
+    margin-bottom: 70px !important;
+  }
+}
+@media screen and (max-width: 1260px){
+  .header .landing .landing-left p:first-child {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 16px !important;
+  }
+  .header .landing .landing-right {
+    width: 520px;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  .header .landing .landing-left {
+    width: 80%;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .header .landing .landing-right {
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .header .landing .landing-right .header-img {
+    width: 120% !important;
+  }
+  .header{
+    background: radial-gradient(
+      circle at 50% 65%,
+      rgba(175, 8, 235, 0.473) 0%,
+      rgba(12, 27, 56, 1) 83%
+    ) !important;
+  }
+  .star{
+    position: absolute;
+    bottom: 120px;
+    left: 32%;
+    transform: translateX(-50%);
+  }
+  .ellipse{
+    position: absolute;
+    top: 70px;
+    transform: translateX(-50%) scale(75%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .landing {
+    margin-top: 42.46px !important;
+  }
+  .header .landing .landing-left,
+  .header .landing .landing-right {
+    width: 100%;
+  }
+  .header .landing .landing-left p:first-child {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    margin-bottom: 16px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .landing {
+    margin-top: 120px !important;
+  }
+  .header .landing .landing-left,
+  .header .landing .landing-right {
+    width: 100%;
+    margin-top: 0px !important;
+  }
+  .header .landing .landing-left{
+    width: 90%;
+  }
+  .header .landing .landing-left p:first-child {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 16px !important;
+  }
+  .header .landing .landing-left p:nth-child(2) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 16px !important;
+  }
+  .header .landing .landing-right .header-img {
+    width: 170% !important;
+    margin-top: 16px !important;
+    margin-left: 20px !important;
+  }
+  .header{
+    background: radial-gradient(
+      circle at 50% 65%,
+      rgba(175, 8, 235, 0.473) 0%,
+      rgba(12, 27, 56, 1) 83%
+    ) !important;
+  }
+  .star{
+    position: absolute;
+    bottom: 100px;
+    left: 13%;
+    transform: translateX(-50%);
+  }
+  .ellipse{
+    position: absolute;
+    left: 86%;
+    top: 190px;
+    transform: translateX(-50%) scale(75%);
+  }
+}

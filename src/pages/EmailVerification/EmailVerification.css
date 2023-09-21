@@ -1,0 +1,16 @@
+.email-verification .head3{
+    color: #fff;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.32px;
+}
+.email-verification .h4{
+    margin-top: 10px !important;
+}
+.email-verification  .loader{
+    right: 38px;
+  }

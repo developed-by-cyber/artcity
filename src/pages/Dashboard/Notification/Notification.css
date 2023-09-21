@@ -1,0 +1,106 @@
+.notification {
+  height: 40px;
+  position: absolute;
+  right: 39px;
+  top: 45px;
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  margin-bottom: 49px !important;
+  z-index: 5;
+}
+.notification .logout img{
+  transform: rotateY(180deg);
+  width: 20px;
+  display: none;
+}
+
+.notification .prof {
+  width: 40px;
+  height: 40px;
+  border-radius: 38.831px;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+ 
+}
+.notification .prof img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.notification .prof-name {
+  width: 188px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  border: 1px solid var(--light-greyscale-white, #fff);
+}
+.notification .prof-name p {
+  color: var(--light-greyscale-white, #fff);
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.notification .prof-name span::before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  opacity: 0.8;
+  background: #ededed;
+  position: absolute;
+  left: -7px;
+  top: 2px;
+}
+.notification .prof-name span {
+  color: #20e4ff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  margin-left: 10px !important;
+}
+.notification .prof-name span img {
+  margin-top: -3px !important;
+}
+@media screen and (max-width: 480px) {
+  .notification {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0px 20px !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .notification .bell {
+    margin-left: auto !important;
+  }
+  .notification .prof-name {
+    width: fit-content;
+    margin-left: -8px !important;
+    padding: 0px 15px !important;
+  }
+  .notification .prof-name p {
+    font-size: 13px;
+  }
+  .notification .prof-name span {
+    font-size: 13px;
+    top: 0px !important;
+  }
+  .notification .prof-name span img {
+    width: 15px;
+    margin-top: -2px !important;
+  }
+  .notification .prof-name span::before {
+    height: 13px;
+  }
+  
+}
